@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoftAR: Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- WEB ICON -->
+    <link rel="PUNPONGSANON" href="https://punpongsanon.info/images/icon/web.ico" type="image/x-icon" />
+
+	<!-- Bootstrap -->
+	<link href="https://punpongsanon.info/css/bootstrap.css" rel="stylesheet">
+	<link href="https://punpongsanon.info/css/index.css" rel="stylesheet">
+	
+	<!-- JQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<!-- Lightbox -->
+	<link href="https://punpongsanon.info/css/lightbox.css" rel="stylesheet">
+
+	<!-- Get Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	
+	<!-- Google Analytic -->
+	<script type="text/javascript" src="https://punpongsanon.info/js/analytics.js">
+	</script>
+</head>
+
+<body>
+<header class="main_header">
+	<!-- to be filled by javascript, see header.html -->
+</header>
+
+<div class="container" style="padding-top: 100px;">
+	<div class="row">
+	<!-- Publication details -->
+	<div class="col-md-4" style="text-align: left;">
+		</br>
+		</br>
+		<span class="medium-headline">
+		Publication
+		</span>
+		</br>
+		</br>
+		<a class="lkaffi" href="https://punpongsanon.info/" target="_blank">P. Punpongsanon</a>, 
+		<a class="lkaffi" href="http://daisukeiwai.org/" target="_blank">D. Iwai</a>, and K. Sato.
+		</br>
+		SoftAR: Visually Manipulating Haptic Softness Perception
+		</br>
+		in Spatial Augmented Reality.
+		</br>
+		<a class="lkgeneral" href="https://sa2018.siggraph.org/en/attendees/technical-papers/session/190/details" target="_blank">IEEE TVCG &#8217;15 (Proceedings of IEEE ISMAR &#8217;15)</a>.
+		</br>
+		</br>
+			<a href="http://dx.doi.org/10.1109/TVCG.2015.2459792" class="btn btn-doi" alt="doi" target="_blank">DOI</a> 
+			&nbsp; &nbsp; 
+			<a href="https://www.dropbox.com/s/7b6k739wvicul64/TVCG_2015_SoftAR_punpongsanon.pdf?dl=0" class="btn btn-pdf" alt="pdf" target="_blank">Paper</a> 
+			&nbsp; &nbsp; 
+			<a href="https://youtu.be/c_y5MIAgVI8" class="btn btn-vdo" alt="video" target="_blank">Video</a> 
+			&nbsp; &nbsp; 
+			</br>
+			</br>
+			<span class="medium-headline">
+			Slides
+			</span>
+			</br>
+			</br>
+			<img src="ppt/softar-ppt-_Page_01.JPG" alt="2018-siggraphasia-flyinghand-Slide1" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_02.JPG" alt="2018-siggraphasia-flyinghand-Slide2" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_03.JPG" alt="2018-siggraphasia-flyinghand-Slide3" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_04.JPG" alt="2018-siggraphasia-flyinghand-Slide4" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_05.JPG" alt="2018-siggraphasia-flyinghand-Slide5" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(5)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_06.JPG" alt="2018-siggraphasia-flyinghand-Slide6" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(6)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_07.JPG" alt="2018-siggraphasia-flyinghand-Slide7" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_08.JPG" alt="2018-siggraphasia-flyinghand-Slide8" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(8)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_09.JPG" alt="2018-siggraphasia-flyinghand-Slide9" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(9)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_10.JPG" alt="2018-siggraphasia-flyinghand-Slide10" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(10)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_11.JPG" alt="2018-siggraphasia-flyinghand-Slide11" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(11)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_12.JPG" alt="2018-siggraphasia-flyinghand-Slide12" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(12)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_13.JPG" alt="2018-siggraphasia-flyinghand-Slide13" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(13)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_14.JPG" alt="2018-siggraphasia-flyinghand-Slide14" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(14)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_15.JPG" alt="2018-siggraphasia-flyinghand-Slide15" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(15)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_16.JPG" alt="2018-siggraphasia-flyinghand-Slide16" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(16)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_17.JPG" alt="2018-siggraphasia-flyinghand-Slide17" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(17)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_18.JPG" alt="2018-siggraphasia-flyinghand-Slide18" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(18)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_19.JPG" alt="2018-siggraphasia-flyinghand-Slide19" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(19)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_20.JPG" alt="2018-siggraphasia-flyinghand-Slide20" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(20)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_21.JPG" alt="2018-siggraphasia-flyinghand-Slide21" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(21)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_22.JPG" alt="2018-siggraphasia-flyinghand-Slide22" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(22)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_23.JPG" alt="2018-siggraphasia-flyinghand-Slide23" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(23)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_24.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(24)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_25.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(25)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_26.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(26)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_27.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(27)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_28.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(28)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_29.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(29)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_30.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(30)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_31.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(31)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_32.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(32)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_33.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(33)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_34.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(34)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_35.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(35)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_36.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(36)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_37.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(37)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_38.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(38)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_39.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(39)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_40.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(40)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_41.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(41)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_42.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(42)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_43.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(43)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_44.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(44)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_45.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(45)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_46.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(46)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_47.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(47)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_48.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(48)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_49.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(49)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_50.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(50)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_51.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(51)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_52.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(52)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_53.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(53)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_54.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(54)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_55.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(55)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_56.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(56)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_57.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(57)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_58.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(58)" class="hover-shadow"/>
+			<img src="ppt/softar-ppt-_Page_59.JPG" alt="2018-siggraphasia-flyinghand-Slide24" width="100px" style="padding-bottom:0px; margin-bottom:10px" onclick="openModal();currentSlide(59)" class="hover-shadow"/>
+	</div>
+	
+	<!-- For slide show -->
+	<!-- close button on tne right corner -->
+	<div id="lightbox-modal" class="lb-modal">	
+		<div class="modal-content">
+		
+			<div class="lb-slides">
+			<div class="numbertext">1 / 59</div>
+			<img src="ppt/softar-ppt-_Page_01.JPG" alt="2018-siggraphasia-flyinghand-Slide1" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">2 / 59</div>
+			<img src="ppt/softar-ppt-_Page_02.JPG" alt="2018-siggraphasia-flyinghand-Slide2" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">3 / 59</div>
+			<img src="ppt/softar-ppt-_Page_03.JPG" alt="2018-siggraphasia-flyinghand-Slide3" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">4 / 59</div>
+			<img src="ppt/softar-ppt-_Page_04.JPG" alt="2018-siggraphasia-flyinghand-Slide4" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">5 / 59</div>
+			<img src="ppt/softar-ppt-_Page_05.JPG" alt="2018-siggraphasia-flyinghand-Slide5" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">6 / 59</div>
+			<img src="ppt/softar-ppt-_Page_06.JPG" alt="2018-siggraphasia-flyinghand-Slide6" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">7 / 59</div>
+			<img src="ppt/softar-ppt-_Page_07.JPG" alt="2018-siggraphasia-flyinghand-Slide7" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">8 / 59</div>
+			<img src="ppt/softar-ppt-_Page_08.JPG" alt="2018-siggraphasia-flyinghand-Slide8" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">9 / 59</div>
+			<img src="ppt/softar-ppt-_Page_09.JPG" alt="2018-siggraphasia-flyinghand-Slide9" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">10 / 59</div>
+			<img src="ppt/softar-ppt-_Page_10.JPG" alt="2018-siggraphasia-flyinghand-Slide10" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">11 / 59</div>
+			<img src="ppt/softar-ppt-_Page_11.JPG" alt="2018-siggraphasia-flyinghand-Slide11" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">12 / 59</div>
+			<img src="ppt/softar-ppt-_Page_12.JPG" alt="2018-siggraphasia-flyinghand-Slide12" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">13 / 59</div>
+			<img src="ppt/softar-ppt-_Page_13.JPG" alt="2018-siggraphasia-flyinghand-Slide13" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">14 / 59</div>
+			<img src="ppt/softar-ppt-_Page_14.JPG" alt="2018-siggraphasia-flyinghand-Slide14" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">15 / 59</div>
+			<img src="ppt/softar-ppt-_Page_15.JPG" alt="2018-siggraphasia-flyinghand-Slide15" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">16 / 59</div>
+			<img src="ppt/softar-ppt-_Page_16.JPG" alt="2018-siggraphasia-flyinghand-Slide16" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">17 / 59</div>
+			<img src="ppt/softar-ppt-_Page_17.JPG" alt="2018-siggraphasia-flyinghand-Slide17" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">18 / 59</div>
+			<img src="ppt/softar-ppt-_Page_18.JPG" alt="2018-siggraphasia-flyinghand-Slide18" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">19/ 59</div>
+			<img src="ppt/softar-ppt-_Page_19.JPG" alt="2018-siggraphasia-flyinghand-Slide19" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">20 / 59</div>
+			<img src="ppt/softar-ppt-_Page_20.JPG" alt="2018-siggraphasia-flyinghand-Slide20" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">21 / 59</div>
+			<img src="ppt/softar-ppt-_Page_21.JPG" alt="2018-siggraphasia-flyinghand-Slide21" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">22 / 59</div>
+			<img src="ppt/softar-ppt-_Page_22.JPG" alt="2018-siggraphasia-flyinghand-Slide22" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">23 / 59</div>
+			<img src="ppt/softar-ppt-_Page_23.JPG" alt="2018-siggraphasia-flyinghand-Slide23" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">24 / 59</div>
+			<img src="ppt/softar-ppt-_Page_24.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">25 / 59</div>
+			<img src="ppt/softar-ppt-_Page_25.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">26 / 59</div>
+			<img src="ppt/softar-ppt-_Page_26.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">27 / 59</div>
+			<img src="ppt/softar-ppt-_Page_27.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">28 / 59</div>
+			<img src="ppt/softar-ppt-_Page_28.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">29 / 59</div>
+			<img src="ppt/softar-ppt-_Page_29.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">30 / 59</div>
+			<img src="ppt/softar-ppt-_Page_30.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">31 / 59</div>
+			<img src="ppt/softar-ppt-_Page_31.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">32 / 59</div>
+			<img src="ppt/softar-ppt-_Page_32.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">33 / 59</div>
+			<img src="ppt/softar-ppt-_Page_33.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">34 / 59</div>
+			<img src="ppt/softar-ppt-_Page_34.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">35 / 59</div>
+			<img src="ppt/softar-ppt-_Page_35.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">36 / 59</div>
+			<img src="ppt/softar-ppt-_Page_36.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">37 / 59</div>
+			<img src="ppt/softar-ppt-_Page_37.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">38 / 59</div>
+			<img src="ppt/softar-ppt-_Page_38.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">39 / 59</div>
+			<img src="ppt/softar-ppt-_Page_39.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">40 / 59</div>
+			<img src="ppt/softar-ppt-_Page_40.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">41 / 59</div>
+			<img src="ppt/softar-ppt-_Page_41.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">42 / 59</div>
+			<img src="ppt/softar-ppt-_Page_42.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">43 / 59</div>
+			<img src="ppt/softar-ppt-_Page_43.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">44 / 59</div>
+			<img src="ppt/softar-ppt-_Page_44.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">45 / 59</div>
+			<img src="ppt/softar-ppt-_Page_45.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">46 / 59</div>
+			<img src="ppt/softar-ppt-_Page_46.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">47 / 59</div>
+			<img src="ppt/softar-ppt-_Page_47.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">48 / 59</div>
+			<img src="ppt/softar-ppt-_Page_48.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">49 / 59</div>
+			<img src="ppt/softar-ppt-_Page_49.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">50 / 59</div>
+			<img src="ppt/softar-ppt-_Page_50.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">51 / 59</div>
+			<img src="ppt/softar-ppt-_Page_51.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">52 / 59</div>
+			<img src="ppt/softar-ppt-_Page_52.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">53 / 59</div>
+			<img src="ppt/softar-ppt-_Page_53.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">54 / 59</div>
+			<img src="ppt/softar-ppt-_Page_54.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">55 / 59</div>
+			<img src="ppt/softar-ppt-_Page_55.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">56 / 59</div>
+			<img src="ppt/softar-ppt-_Page_56.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">57 / 59</div>
+			<img src="ppt/softar-ppt-_Page_57.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">58 / 59</div>
+			<img src="ppt/softar-ppt-_Page_58.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>
+			
+			<div class="lb-slides">
+			<div class="numbertext">59 / 59</div>
+			<img src="ppt/softar-ppt-_Page_59.JPG" alt="2018-siggraphasia-flyinghand-Slide24" style="padding-bottom:0px; margin-bottom:10px; width:100%">
+			</div>			
+			
+			<!-- Next/previous controls -->
+			<a class="close-button" onclick="closeModal()">&times;</a>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+	
+	<!-- Project information -->
+	<div class="col-md-8" style="text-align: justify;">
+		<h3 class="big-headline">
+		SoftAR: 
+		</br>
+		Visually Manipulating Haptic Softness Perception in Spatial Augmented Reality
+		</h3>
+		
+		</br>
+		<iframe width="100%" height="420" src="https://www.youtube.com/embed/dVAa5oM4jF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</br>
+		</br>		
+		We present SoftAR, a novel spatial augmented reality (AR) technique based on a pseudo-haptics mechanism that visually manipulates the sense of softness perceived by a user pushing a soft physical object. 
+		Considering the limitations of projection-based approaches that change only the surface appearance of a physical object, we propose two projection visual effects, i.e., surface deformation effect (SDE) and body appearance effect (BAE), on the basis of the observations of humans pushing physical objects. 
+		The SDE visualizes a two-dimensional deformation of the object surface with a controlled softness parameter, and BAE changes the color of the pushing hand. 
+		Through psychophysical experiments, we confirm that the SDE can manipulate softness perception such that the participant perceives significantly greater softness than the actual softness. 
+		Furthermore, fBAE, in which BAE is applied only for the finger area, significantly enhances manipulation of the perception of softness. We create a computational model that estimates perceived softness when SDE+fBAE is applied. 
+		We construct a prototype SoftAR system in which two application frameworks are implemented. 
+		The softness adjustment allows a user to adjust the softness parameter of a physical object, and the softness transfer allows the user to replace the softness with that of another object.
+		</br>	
+		</br>	
+		<img src="images/softar-overview-of-surface-deformation.png" alt="Teaser" width="100%" style="padding-bottom:0px; margin-bottom:10px"/>
+		</br>
+		<b>
+		Figure 1: 
+		Overview of SoftAR application. The user can manipulate an object’s softness by projecting the surface deformation and body appearance effect. 
+		</b> 
+		</br>
+		</br>
+		For more details, please find our paper.
+		</br>
+		</br>	
+	</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="site-info">
+					© Since 2011, Parinya Punpongsanon.
+				</p>
+			</div>
+			<div class="col-sm-12">
+			<p class="footer-disclaimer">
+			Documents protected by 
+			<a rel="license" href="https://www.ieee.org/publications_standards/publications/rights/copyrightpolicy.html" target="_blank">IEEE</a> 
+			and 
+			<a rel="license" href="http://www.acm.org/publications/policies/copyright-statement" target="_blank">ACM</a> 
+			copyrights, Code and design copyrights under  
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons attribute</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- Bootstrap --> 
+<script type="text/javascript" src="https://punpongsanon.info/js/bootstrap.min.js"></script>
+<!-- header -->
+<script type="text/javascript" src="https://punpongsanon.info/js/loadheader.js"></script> 
+<!-- lightbox -->
+<script type="text/javascript" src="https://punpongsanon.info/js/lightbox.js"></script>
+</body>
+</html>
